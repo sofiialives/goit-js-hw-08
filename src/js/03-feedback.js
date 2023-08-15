@@ -30,7 +30,7 @@ form.addEventListener('submit', handleSubmit);
 
 function handleSubmit() {
     localStorage.removeItem(LOCAL_KEY);
-    reset(form);
+    form.reset();
     console.log({
         email: getEmail.value,
         message: getMessage.value,
