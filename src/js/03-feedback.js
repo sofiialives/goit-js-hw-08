@@ -29,10 +29,11 @@ function onLoad(){
 form.addEventListener('submit', handleSubmit);
 
 function handleSubmit() {
-    localStorage.removeItem(LOCAL_KEY);
-    form.reset();
     console.log({
         email: getEmail.value,
         message: getMessage.value,
       })
+    localStorage.removeItem(LOCAL_KEY);
+    form.reset();
+    
   }
